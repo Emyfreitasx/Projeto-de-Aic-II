@@ -1,15 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentamentos de salas C3</title>
-</head>
 
-<body>
-    <h1>Sistema de agendamentos do C3</h1>
-    <p><b><hr>pagina de agendamentos</hr></i></b></p>
-    <img src="./image/image.png"
-    alt="imagem de um calendario"/>
-</body>
+<html>
+    <head>
+      <!--Link das fontes tirado do google fonts. fonte: League Spartan-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+      <!--Fontes sempre antes do Style!-->
+
+      <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>site de agendamento c3</title>
+        <link rel="stylesheet" href="">
+        <style>
+          *{
+            margin: 0%;
+            padding: 0%;
+            font-family: "League Spartan";
+          
+          }
+
+          html, body {
+            height: 100%;
+          }
+          
+          body {
+            display: flex;
+            margin: 0;
+           /* background: #eabeaf; */
+          }
+          
+          #jeff {
+            width: 60%;
+            height: 70%;
+            background-color: #2872A6;
+            border: solid 1px;
+
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 25px;
+          }
+          /*
+          #jeff:hover {
+            background-color: black;
+          }
+          */
+          
+          #emily {
+            border: solid 1.8px;
+            width: 42%;
+            height: 100%;
+            background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(141, 162, 233));
+            /* rgb(194, 159, 201));*/
+            /*background-image: linear-gradient(to bottom, white 40%, rgba(128, 0, 128)); */
+            box-shadow: 2px 2px 5px  #494747;
+            position: relative;
+
+            border-radius: 25px;
+          }
+          #jeff2 {
+            
+            width: 43%;
+            height: 9%;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            border-radius: 10px;
+
+            /* Style do Texto */
+            
+            text-align: center;
+            font-size: 30px;
+            font-weight: 750;
+           /* background-color: rgba(183, 209, 233, 0.438);*/
+            
+            
+
+           /* font-family: "League Spartan";*/
+            /*Verdana, Geneva, Tahoma, sans-serif;*/
+            color: aliceblue;
+          }
+          
+          .button{
+            background-color: #2c53bd;
+            border: 1px solid transparent;
+            color: white;
+            padding: 5% 10%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 95%;
+            margin: 0% 0%;
+            cursor: pointer;
+            border-radius: 1vw;
+            transition: 0.2s;
+          
+           }
+
+
+          .button:hover {
+            background-color: slategrey;
+            transition: 0.2s;
+          
+          }
+         
+           .text {
+            padding-top: 18%;
+          /*  font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+            font-size: 200%;
+            text-align: center;
+            color: #2872A6;
+          } 
+           .text1 {
+            position: fixed;
+            padding-top: 2.5%;
+            left: 54%;
+          /*font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            color: aliceblue;
+            
+            font-weight: bold;
+           }
+           /* Tira o UNDERLINE dos links
+           .link {
+            text-decoration: none;
+            color:#fdf9f9
+           } */
+          #singin {
+            position: absolute;
+            right: 4vw;
+            top: 15vw;
+            display: flex;
+            flex-direction: column;
+
+          }
+          label{
+            width: auto;
+            display: inline-block;
+            text-align: left; 
+            color: whitesmoke;
+            font-style: normal;
+            font-size: 120%;
+          }
+          .sing input{
+            
+            width: 25vw;
+            height: 3vw;
+            border-radius: 0.8vw;
+            font-size: 2vw;
+            border: 0.1px solid;
+            font-weight: bolder;
+          }
+          .sing input:hover{
+            border: solid 2px;
+            transition: 0.2s;
+            
+          }
+          button {
+            padding: 8px 20px 5px 20px;
+            position: absolute;
+            top: 85%;
+            right: 25%;
+            font-size: 2vw;
+            border-radius: 1vw;
+            background-color: rgb(141, 162, 233);
+            border: 1px solid transparent;
+            transition: 0.2s;
+            
+          }
+          button:hover {
+            background-color: slategray;
+            transition: 0.2s;
+            
+          }
+
+          label1 {
+            font-weight: bolder;
+            color: aliceblue;
+          }
+       
+        </style>
+      
+    </head>
+    
+
+    <body>
+        
+      <div id = "jeff">
+        
+        <h1 class="text1"> Entre na sua conta </h1>
+        <form class="sing" action="GET">
+          <div id = "singin">
+          
+            <label>Matricula</label><input type="text"/>
+            <label>Senha</label><input type="password"/>
+            
+          </div>
+            <button type="submit"><label1>Enviar</label1></button>
+        </form>
+
+        <div id ="jeff2">
+            <a href="#" class="button" target="_blank"> Criar uma conta nova </a>
+        </div>
+
+        <div id = "emily">
+          <h1 class = "text">Olá, seja <br/> bem-vindo!</h1>
+        </div>
+      
+      </div>
+      
+    </body>
 </html>
